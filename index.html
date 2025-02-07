@@ -36,12 +36,13 @@
                     <p>And much more!</p>
                 </div>
             </div>
-            <form action="submit">
+            <form action="">
                 <div class="inputs">
                     <label for="">Email address</label>
-                    <input type="email" placeholder="email@company.com">
+                    <input type="email" id="email" placeholder="email@company.com">
+                    <div class="error"></div>
                 </div>
-                <div class="subscribe"><button class="button">Subscribe to monthly newsletter</button></div>
+                <div class="subscribe"><button class="button" id="subscribe">Subscribe to monthly newsletter</button></div>
             </form>
         </div>
 
@@ -66,10 +67,12 @@
             </div>
 
             <div class="button-dismiss">
-                <button class="dismiss">Dismiss message</button>
+                <button class="dismiss" id="dismiss">Dismiss message</button>
             </div>
         </div>
     </div>
+
+    <script src="./script.js" defer></script>
 </body>
 
 </html>
