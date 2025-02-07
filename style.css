@@ -1,112 +1,174 @@
-
 :root {
-    --orange-100:  hsl(4, 100%, 67%);
-    --white-100: hsl(0, 0%, 100%);
-    --grey-100:  hsl(231, 7%, 60%);
-    --grey-200: hsl(235, 18%, 26%);
-    --grey-300: hsl(234, 29%, 20%);
+  --orange-100: hsl(4, 100%, 67%);
+  --white-100: hsl(0, 0%, 100%);
+  --grey-100: hsl(231, 7%, 60%);
+  --grey-200: hsl(235, 18%, 26%);
+  --grey-300: hsl(234, 29%, 20%);
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
 
-body{
-    background-color: var(--grey-200);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+body {
+  background-color: var(--grey-200);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .card-1 {
-    background-color: var(--white-100);
-    display: flex;
-    height: fit-content;
-    align-items: center;
-    justify-content: space-between;
-    width: 60%;
-    margin: 0 auto;
-    border-radius: 16px;
+  background-color: var(--white-100);
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 16px;
 }
 
 h1 {
-    color: var(--grey-300);
-    font-size: xxx-large;
-    margin-bottom: 16px;
-    font-weight: 700;
+  color: var(--grey-300);
+  font-size: xxx-large;
+  margin-bottom: 16px;
+  font-weight: 700;
 }
 
 p {
-    font-size: 16px;
-    color: var(--grey-200);
-    padding: 12px 0;
+  font-size: 16px;
+  color: var(--grey-200);
+  padding: 12px 0;
+}
+
+.break-md {
+  display: block;
 }
 
 .list {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .intro {
-    margin-left: 4em;
-    text-align: start;
+  margin-left: 4em;
+  text-align: start;
 }
 
 .image-desktop {
-    padding: 12px;
+  padding: 12px;
 }
 
 label {
-    color: var(--grey-300);
-    margin-bottom: 6px;
-    font-weight: 700;
+  color: var(--grey-300);
+  margin-bottom: 6px;
+  font-weight: 700;
 }
 
 input {
-    width: 100%;
-    border: 1px solid var(--grey-100);
-    background: var(--white-100);
-    height: 46px;
-    border-radius: 8px;
-    padding: 10px;
+  width: 100%;
+  border: 1px solid var(--grey-100);
+  background: var(--white-100);
+  height: 46px;
+  border-radius: 8px;
+  padding: 10px;
 }
 
-button {
-    width: 100%;
-    height: 46px;
-    border-radius: 8px;
-    background-color: var(--grey-300);
-    color: var(--white-100);
-    font-weight: 700;
-    margin-top: 6px;
+.button {
+  width: 100%;
+  height: 46px;
+  border-radius: 8px;
+  background-color: var(--grey-300);
+  color: var(--white-100);
+  font-weight: 700;
+  margin-top: 6px;
 }
 
 .inputs {
-    margin-top: 12px;
-    display: flex;
-    flex-direction: column;
-    padding: 14px 0;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0;
 }
 .card-2 {
-    display: none;
+  background-color: var(--white-100);
+  display: none;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 12px;
 }
 
+.success {
+    padding: 8px 0;
+}
+
+.email {
+    font-weight: 700;
+    color: var(--grey-300);
+}
+
+.dismiss {
+  width: 100%;
+  height: 44px;
+  background-color: var(--grey-300);
+  border-radius: 8px;
+  color: var(--white-100);
+  font-weight: 700;
+  margin: 2em 0;
+}
 
 @media (max-width: 600px) {
-    body {
-        background-color: unset;
-        overflow: hidden;
-    }
+  body {
+    background-color: unset;
+    overflow: hidden;
+  }
 
-    .card-1 {
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100vh;
-        padding: 0;
-    }
+  .card-1 {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .image-desktop {
+    padding: 0;
+  }
+
+  .intro {
+    margin-left: 0;
+    margin-bottom: 4em;
+  }
+
+  h1 {
+    font-size: xx-large;
+  }
+
+  p {
+    padding: 8px 0;
+  }
+
+  .break-md {
+    display: none;
+  }
+
+  .list {
+    gap: 6px;
+  }
+
+  .card-2 {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .thanks {
+    display: grid;
+    gap: 4em;
+  }
 }
